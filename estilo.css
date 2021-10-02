@@ -1,0 +1,152 @@
+/* Tipografías: Courgette (Títulos)
+                Tinos (Texto general) */
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
+
+html body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#descripcionWeb{
+    border: 2px solid black;
+    border-radius: 1em;
+    background-color: #f7bfd5;
+}
+
+.textoPrincipal {
+    font-family: 'Courgette', cursive;
+    color: #b0b1d9;
+}
+
+.textoSecundario {
+    font-family: 'Tinos', serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu {
+    order: 1;
+    font-size: 60px;
+}
+
+#logo {
+    order: 2;
+    width: 200px;
+}
+
+#login {
+    order: 3;
+    font-size: 60px;
+}
+
+#divBanner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    border: 2px solid black;
+    background-color: #d9eef6;
+    text-align: center;
+}
+
+.secciones{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 0px;
+    column-gap: 0px;
+    width: 100%;
+    height: 20em;
+}
+
+#seccionRopa img{
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-self: center;
+    place-self: end;
+}
+
+#seccionRopa a{
+    font-size: 3em;
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: start;
+    align-self: end;
+}
+
+#seccionRopa p{
+    font-size: 1em;
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: start;
+}
+
+#seccionAccesorios img{
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-self: center;
+    place-self: start;
+}
+
+#seccionAccesorios a{
+    font-size: 3em;
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: end;
+    align-self: end;
+}
+
+#seccionAccesorios p{
+    font-size: 1em;
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: end;
+}
+
+#tituloOfertas {
+    grid-row: 1;
+    grid-column: 1 / 4;
+    font-size: 30px;
+}
+
+#oferta1 {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#oferta2 {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#oferta3 {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+#tituloFooter{
+    font-size: 35px;
+}
+
+.textoFooter{
+    font-size: 20px;
+}
